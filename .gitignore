@@ -1,6 +1,15 @@
 # Created by https://www.toptal.com/developers/gitignore/api/c++,visualstudio,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,visualstudio,visualstudiocode
 
+
+############### kenGwon add ###############
+# KCCImageNet 제외
+./VisionApp/KCCImageNet/*
+# 서드파티 라이브러리 제외 
+./VisionApp/thirdparty/*
+###########################################
+
+
 ### C++ ###
 # Prerequisites
 *.d
