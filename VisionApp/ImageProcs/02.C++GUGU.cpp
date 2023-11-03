@@ -98,11 +98,16 @@ int main()
 	Gugudan myGugudan;
 	size_t dan_start, dan_end, step_start, step_end;
 
+	
+	dan_start = 2;
+	dan_end = 9;
+	step_start = 1;
+	step_end = 9;
 
-	std::cin >> dan_start;
+	/*std::cin >> dan_start;
 	std::cin >> dan_end;
 	std::cin >> step_start;
-	std::cin >> step_end;
+	std::cin >> step_end;*/
 
 
 	myGugudan.setParams(dan_start, dan_end, step_start, step_end);

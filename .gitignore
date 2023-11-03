@@ -4,9 +4,9 @@
 
 ############### kenGwon add ###############
 # KCCImageNet 제외
-./VisionApp/KCCImageNet/*
+VisionApp/KCCImageNet/*
 # 서드파티 라이브러리 제외 
-./VisionApp/thirdparty/*
+VisionApp/thirdparty/*
 ###########################################
 
 
