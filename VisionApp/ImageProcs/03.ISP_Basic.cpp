@@ -14,9 +14,6 @@ int main()
 	int channels = src.channels();
 	//length *= channels;
 
-
-
-
 	const int histoSz = 256;//sizeof(uchar);
 	int histo[histoSz] = { 0, };
 	//int* pHisto = new int[length];
@@ -60,10 +57,12 @@ int main()
 		cv::line(draw, st, ed, CV_RGB(255, 255, 0));
 	}
 
+	
+
 	int a = 0;
 	
 
-
+	
 #if 0
 	//std::string fileName = "../KCCImageNet/stinkbug.png";
 	std::string fileName = "../KCCImageNet/stop_img.png";

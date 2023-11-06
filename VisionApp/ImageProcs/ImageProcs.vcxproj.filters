@@ -16,6 +16,9 @@
     <Filter Include="Common">
       <UniqueIdentifier>{fd71daba-5b80-444f-bd39-6be46faf03c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="kenGwon_test">
+      <UniqueIdentifier>{e772d385-6d1c-4c1b-b0e9-683035e1a146}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImageProcs.cpp">
@@ -28,6 +31,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="03.ISP_Basic.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="04.ISP_ColorSpace.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="05.ISP_ColorHSV.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
