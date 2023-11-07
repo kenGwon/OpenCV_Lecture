@@ -84,7 +84,7 @@ int main(int argc, char* argv[])
 
 		char key = (char)waitKey(30);
 		if (key == 'q' || key == 27)
-		{
+		{ 
 			break;
 		}
 	}

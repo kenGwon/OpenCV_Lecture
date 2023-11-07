@@ -19,6 +19,9 @@
     <Filter Include="kenGwon_test">
       <UniqueIdentifier>{e772d385-6d1c-4c1b-b0e9-683035e1a146}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ISP">
+      <UniqueIdentifier>{6470b8ea-d906-4a8f-ae37-76462da7df9a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ImageProcs.cpp">
@@ -39,10 +42,25 @@
     <ClCompile Include="05.ISP_ColorHSV.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ISP.cpp">
+      <Filter>ISP</Filter>
+    </ClCompile>
+    <ClCompile Include="06.ISP_HistoEq.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.ISP_GammaCorrection.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.ISP_Filter_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h">
       <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ISP.h">
+      <Filter>ISP</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
