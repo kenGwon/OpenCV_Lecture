@@ -16,9 +16,6 @@
     <Filter Include="Common">
       <UniqueIdentifier>{fd71daba-5b80-444f-bd39-6be46faf03c6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="kenGwon_test">
-      <UniqueIdentifier>{e772d385-6d1c-4c1b-b0e9-683035e1a146}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ISP">
       <UniqueIdentifier>{6470b8ea-d906-4a8f-ae37-76462da7df9a}</UniqueIdentifier>
     </Filter>

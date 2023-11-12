@@ -1,52 +1,26 @@
-#pragma once
+ï»¿/*
 
-#include "Common.h"
-#include "ISP.h"
+	https://patiencelee.tistory.com/816
+	ìœ„ ë¸”ë¡œê·¸ë¥¼ ë³´ê³  ì†”ë£¨ì…˜ì„ ìš°í´ë¦­í•˜ì—¬ [ì†ì„±]ì— ë“¤ì–´ê°€ì„œ 
+	[ì‹œì‘ í”„ë¡œì íŠ¸] íƒ­ì—ì„œ "í•œê°œì˜ ì‹œì‘ í”„ë¡œì íŠ¸"ë¡œ ì„¤ì •ë˜ì–´ìˆë˜ ë¼ë””ì˜¤ ë²„íŠ¼ì„ "í˜„ì¬ ì„ íƒì˜ì—­"ìœ¼ë¡œ ë°”ê¿”ì£¼ì—ˆë‹¤.
+	ê·¸ë ‡ê²Œ í•¨ìœ¼ë¡œì¨ ì´ì œ ë””ë²„ê·¸ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ í•˜ë‚˜ì˜ ì†”ë£¨ì…˜ì— ë‹¤ìˆ˜ì˜ í”„ë¡œì íŠ¸ë¥¼ ë¡œë“œí•˜ê³  ìˆì–´ë„ í˜„ì¬ ì»¤ì„œê°€ ìœ„ì¹˜í•œ í”„ë¡œì íŠ¸ë¥¼ ì»´íŒŒì¼ í•˜ì—¬ ì‹¤í–‰í•˜ê²Œ ë˜ì—ˆë‹¤.
+	(ì›ë˜ ì´ë ‡ê²Œ ì“°ëŠ”ê²Œ ë§ëŠ”ì§€ëŠ” ëª¨ë¥´ê² ë‹¤.)
+
+*/
+
+#include "Common_kenGwon.h"
 #include <numeric>
 
 int main()
 {
-	int datas[] = { 6, 4, 8, 9, 4, 4, 8, 64, 4, 6, 4, 8, 6, 4, 11, 1, 3, 1134, 5, 64, 5, 64 };
-
-	/*
-		³ëÀÌÁî°¡ ¾ø´Â ´ëÇ¥ ½ÅÈ£ °ª ÇÏ³ª¸¦ Á¤ÇÏ½Ã¿À.
-
-		1. outlier detection (how?)
-		  - Áß¾Ó°ª°úÀÇ Â÷ÀÌ°¡ Æò±Õ°ªÀ» ³Ñ¾î°¡¸é outlier·Î ÆÇÁ¤
-
-		2. ´ëÇ¥ °ªÀ» Á¤ÇÑ´Ù. (how?)
-		  - Áß¾Ó°ª?
-		  - ÃÖ´Ù ºóÃâ °ª?
-		  - Æò±Õ°ª?
-	*/
-	
-	int length = sizeof(datas) / sizeof(datas[0]);
-	std::sort(datas, datas + length);
-	int median = datas[length / 2];	
-
-	int sum = 0;
-	for (size_t i = 0; i < length; i++) sum += datas[i];
-	int mean = sum / length - 10; // ¿ì¿¬ÀÇ ÀÏÄ£Áö ¸ğ¸£°Ú´Âµ¥ ±×³É °è»êÇÏ¸é Æò±Õ°ªÀÌ 64.xxxx·Î ³ª¿Í¼­ µÚ¿¡¼­ 64°¡ ¾È°É·¯Áü. ±×·¡¼­ 1 »©ÁÜ.
-
-	vector<int> new_datas;
-	for (size_t i = 0; i < length; i++)
-	{
-		if (datas[i] - median > mean) continue;
-		else new_datas.push_back(datas[i]);
-	}
-	
-	double sum_vector = accumulate(new_datas.begin(), new_datas.end(), 0);
-	double result = sum_vector / new_datas.size();
-	
-
 	///////////////////////////////
-	// ÇÊÅÍ¸¦ ÀÌ¿ëÇÑ blur ÀÚÀÛÄÚµå // 
+	// í•„í„°ë¥¼ ì´ìš©í•œ blur ìì‘ì½”ë“œ // 
 	///////////////////////////////
 
 	std::string fileName = "../thirdparty/opencv_480/sources/samples/data/lena.jpg";
 	cv::Mat src_gray = cv::imread(fileName, cv::ImreadModes::IMREAD_GRAYSCALE);
 
-	// ¾Æ ÀÌ·±½ÄÀ¸·Îµµ µ¿ÀÏÇÑ Å©±âÀÇ Çà·ÄÀ» ¸¸µé¾î¼­ ÃÊ±âÈ­ ÇØÁÙ ¼ö ÀÖ±¸³ª
+	// ì•„ ì´ëŸ°ì‹ìœ¼ë¡œë„ ë™ì¼í•œ í¬ê¸°ì˜ í–‰ë ¬ì„ ë§Œë“¤ì–´ì„œ ì´ˆê¸°í™” í•´ì¤„ ìˆ˜ ìˆêµ¬ë‚˜
 	cv::Mat src_gray_blur = src_gray.clone();
 	src_gray_blur = 0;
 
@@ -79,6 +53,6 @@ int main()
 		}
 	}
 
-	
+
 	return 1;
 }

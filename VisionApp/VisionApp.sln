@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcs", "ImageProcs\ImageProcs.vcxproj", "{04351DF3-A23A-4835-8532-33EFFB337DEC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kenGwon_book", "kenGwon_book\kenGwon_book.vcxproj", "{0442B272-8BE3-42ED-9648-76E5DAA3C2C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{04351DF3-A23A-4835-8532-33EFFB337DEC}.Release|x64.Build.0 = Release|x64
 		{04351DF3-A23A-4835-8532-33EFFB337DEC}.Release|x86.ActiveCfg = Release|Win32
 		{04351DF3-A23A-4835-8532-33EFFB337DEC}.Release|x86.Build.0 = Release|Win32
+		{0442B272-8BE3-42ED-9648-76E5DAA3C2C0}.Debug|x64.ActiveCfg = Debug|x64
+		{0442B272-8BE3-42ED-9648-76E5DAA3C2C0}.Debug|x64.Build.0 = Debug|x64
+		{0442B272-8BE3-42ED-9648-76E5DAA3C2C0}.Debug|x86.ActiveCfg = Debug|Win32
+		{0442B272-8BE3-42ED-9648-76E5DAA3C2C0}.Debug|x86.Build.0 = Debug|Win32
+		{0442B272-8BE3-42ED-9648-76E5DAA3C2C0}.Release|x64.ActiveCfg = Release|x64
+		{0442B272-8BE3-42ED-9648-76E5DAA3C2C0}.Release|x64.Build.0 = Release|x64
+		{0442B272-8BE3-42ED-9648-76E5DAA3C2C0}.Release|x86.ActiveCfg = Release|Win32
+		{0442B272-8BE3-42ED-9648-76E5DAA3C2C0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
