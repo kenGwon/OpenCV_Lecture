@@ -60,6 +60,21 @@
     <ClCompile Include="p400_polygon_detection.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="p407_template_matching.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="p423_hog_algorithm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="p433_harris_corner.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="p448_keypoint_detection.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="p463_find_homography.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common_kenGwon.h">

@@ -9,7 +9,6 @@ int main()
 	std::string fileName = "../thirdparty/opencv_480/sources/samples/data/lena.jpg";
 	cv::Mat src_gray = cv::imread(fileName, cv::ImreadModes::IMREAD_GRAYSCALE);
 
-	// 아 이런식으로도 동일한 크기의 행렬을 만들어서 초기화 해줄 수 있구나
 	cv::Mat src_gray_blur = src_gray.clone();
 	src_gray_blur = 0;
 	
@@ -43,7 +42,6 @@ int main()
 				}
 			}
 			int index = (row)*src_gray.cols + (col);
-			//src_gray_blur.data[index] = static_cast<uchar>(sum);
 			src_gray_blur.data[index] = cv::saturate_cast<uchar> (static_cast<uchar>(sum));
 		}
 	}
