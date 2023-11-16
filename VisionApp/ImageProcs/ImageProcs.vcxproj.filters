@@ -69,6 +69,21 @@
     <ClCompile Include="09_1.ISP_ShapeInfo_contour.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10.ISP_Morpology.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10_1.ISP_Morpology_image.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10_2.09_1recycle_quiz.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10_3.challenge_quiz.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10_4.challenge_quiz.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h">
