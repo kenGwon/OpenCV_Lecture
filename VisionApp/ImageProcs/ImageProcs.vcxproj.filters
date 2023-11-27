@@ -84,6 +84,18 @@
     <ClCompile Include="10_4.challenge_quiz.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11.ISP_Template_Matching.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11_1.quiz1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11_2.quiz2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11_2.quiz2_refactoring.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h">
